@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
-<body>
- 
+<body style="background-color: #ffffff;">
+  <h1>Click The Buttons Below to Change the Colors</h1>
+  <button id='btn1' onclick="BlueColor()">Click Here for Blue!</button>
+  <button id='btn2' onclick="WhiteColor()">Click Here for White!</button>
+
+  
   <?xml version="1.0" encoding="UTF-8"?>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 924 636">
     <defs>
@@ -27,18 +32,20 @@
       <path class="cls-2" d="m593,447c15.46-46.66-30.32-135.25-100-151,89.42,48.12,61.26,121.62,35.56,153h-146.56c95.36-13.13,119.3-111.81,41-139-12.3-.23-24.34-1.43-36-4-3.82,2.91-5.22,9.49-6,17-13.76-25.37-13.63-48.38,18-66,55.41-53.97,124.59-45.83,177-3l15,15c1,3,1,15,1,15l-33-24-19-7-21-4-18-2-29,3-22,8-21,11-2,2h3l14-7c3.69,16.08,43.72,22.89,41-8,39.68-2.59,74.88,16.28,107,50,8.71,136.78,2.05,140.31,1,141Z"/>
     </g>
   </svg>
-  </svg>
 
-
-      <div id="textbox"></div>
-      
       <script>
-        let blueShape=document.getElementById("blue")
 
-        blueShape.addEventListener("click", () => {
-         document.getElementById("textbox").innerText = "Hello Blue!"
-        })
+          function BlueColor() {
+            document.body.style.backgroundColor = '#0147bb';
+            }
+
+          function WhiteColor() {
+            document.body.style.backgroundColor = '#fff';
+            }
+
       </script>
+
+
 
 </body>
 </html>
